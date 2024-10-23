@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+
+}
+
+body{
+    max-width: 1920px;
+    margin: auto;
+    background-color: rgb(222, 222, 250);
+    
+}
+
+.top{
+    background-color: rgb(236, 202, 158);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0 1px 2px #000;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.notes-input{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+    & > textarea{
+        width: 600px;
+        height: 170px;
+        border-radius: 12px;
+        box-shadow: 2px 0 10px #000;
+        padding: 10px 10px;
+    }
+    & > textarea:focus{
+        outline: none;
+    }
+
+    & > input{
+        cursor: pointer;
+    }
+}
+
+button{
+    width: 100px;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 0.5px solid;
+    box-shadow: 2px 1px 8px #000;
+    transition: 0.3s ease;
+}
+
+ button:hover{
+
+    background-color: #d7d4d4;
+    color: #000;
+   
+}
+
+hr{
+    margin-top: 40px;
+    height: 10px;
+    background-color: #fff;
+    color: #000;
+}
+
+.output{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+#notes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
